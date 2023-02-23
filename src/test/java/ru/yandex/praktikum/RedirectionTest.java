@@ -16,7 +16,6 @@ public class RedirectionTest extends TestBase{
         Configuration.headless = true;
         optionBrowser("chrome");
         Selenide.open("https://stellarburgers.nomoreparties.site/");
-
     }
     @Test
     @DisplayName("Переход на вкладку Булки")
@@ -27,7 +26,6 @@ public class RedirectionTest extends TestBase{
     @DisplayName("Переход на вкладку Соусы")
     public void switchToTabSauces() {
         new MainPage().clickSauceButton().checkingTransitionToSauce();
-
     }
     @Test
     @DisplayName("Переход на вкладку Начинки")

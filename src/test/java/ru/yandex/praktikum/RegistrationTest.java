@@ -17,7 +17,7 @@ import static ru.yandex.praktikum.pages.helper.UserData.*;
 public class RegistrationTest extends TestBase{
     User user;
     DeleteUser deleteUser = new DeleteUser();
-    boolean createUser;
+    private boolean createUser;
     @Before
     public void setUp() {
         Configuration.headless = false;

@@ -16,8 +16,6 @@ public class AccountPage {
     private final SelenideElement logoButton = $(byXpath("//div[@class='AppHeader_header__logo__2D0X2']/a"));
     private final SelenideElement enterText = $(byXpath(".//h2[text() = 'Вход']"));
 
-
-
     @Step("нажать на кнопку профиля")
     public AccountPage clickProfileButton() {
         profileNavButton.click();

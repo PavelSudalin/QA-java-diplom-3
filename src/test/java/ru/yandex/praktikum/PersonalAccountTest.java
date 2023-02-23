@@ -16,7 +16,7 @@ import ru.yandex.praktikum.pages.model.User;
 import static ru.yandex.praktikum.pages.helper.UserData.defaultUserData;
 @DisplayName("Проверка личного кабинета")
 public class PersonalAccountTest extends TestBase{
-    static User user;
+    private static User user;
     static DeleteUser deleteUser = new DeleteUser();
     static RegistrationUser registrationUser = new RegistrationUser();
 
@@ -27,6 +27,7 @@ public class PersonalAccountTest extends TestBase{
         user = defaultUserData();
         registrationUser.registrationUser();
     }
+
     @Test
     @DisplayName("Переход по клику на Личный кабинет")
     public void loginPersonalAccount() {
@@ -53,6 +54,7 @@ public class PersonalAccountTest extends TestBase{
         new AccountPage().checkSuccessfulAccountLogin()
                 .clickConstructorButton().checkTransitionMainPage();
     }
+
     @Test
     @DisplayName("Переход по клику на Stellar Burgers")
     public void transitionToLogo() {
@@ -80,6 +82,7 @@ public class PersonalAccountTest extends TestBase{
         new AccountPage().checkSuccessfulAccountLogin()
                 .clickExitButton().checkExitPersonalAccount();
     }
+
     @After
     public void teardown() {
         Selenide.closeWebDriver();

@@ -16,7 +16,6 @@ public class LoginPage {
     private final SelenideElement enterButton = $(byXpath(".//button[text() = 'Войти']"));
     private final SelenideElement createBurgerCheck = $(byXpath(".//h1[@class = 'text text_type_main-large mb-5 mt-10']"));
 
-
     @Step("Нажать на кнопку регистрации")
     public LoginPage clickRegistrationLink() {
         registrationLink.click();
@@ -28,11 +27,13 @@ public class LoginPage {
         emailPlaceholder.setValue(email);
         return this;
     }
+
     @Step("Заполнить пароль")
     public LoginPage setPassword(String password) {
         passwordPlaceholder.setValue(password);
         return this;
     }
+
     @Step("Нажать на кнопку входа")
     public LoginPage clickEnter() {
         enterButton.click();

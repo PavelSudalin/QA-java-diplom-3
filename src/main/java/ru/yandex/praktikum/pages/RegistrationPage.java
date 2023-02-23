@@ -5,7 +5,6 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.junit.Assert;
 
-
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 import static org.hamcrest.Matchers.containsString;
@@ -18,7 +17,6 @@ public class RegistrationPage {
     private final SelenideElement errorPasswordWarning = $(byXpath(".//p[@class = 'input__error text_type_main-default']"));
     private final SelenideElement enterButton = $(byXpath(".//a[text() = 'Войти']"));
     private final SelenideElement enterText = $(byXpath(".//h2[text() = 'Вход']"));
-
 
     @Step("Заполнить Имя")
     public RegistrationPage setName(String name) {

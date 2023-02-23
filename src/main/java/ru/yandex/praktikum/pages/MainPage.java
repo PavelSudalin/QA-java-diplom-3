@@ -24,7 +24,6 @@ public class MainPage {
 
     private final SelenideElement enterText = $(byXpath(".//h2[text() = 'Вход']"));
 
-
     @Step("нажать на кнопку Булки")
     public MainPage clickBunButton() {
         sauceButton.click();
