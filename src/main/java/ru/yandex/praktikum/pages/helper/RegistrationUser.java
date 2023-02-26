@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 import static ru.yandex.praktikum.pages.helper.UserData.defaultUserData;
 
 public class RegistrationUser {
-    User user = defaultUserData();
+    private final User user = defaultUserData();
     String baseURL = "https://stellarburgers.nomoreparties.site";
     public void registrationUser() {
         given()

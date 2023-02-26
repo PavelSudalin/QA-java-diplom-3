@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 import static ru.yandex.praktikum.pages.helper.UserData.defaultUserLogin;
 
 public class DeleteUser {
-    User user = defaultUserLogin();
+    private final User user = defaultUserLogin();
     private String baseURL = "https://stellarburgers.nomoreparties.site";
 
     public void deleteDefaultUser() {

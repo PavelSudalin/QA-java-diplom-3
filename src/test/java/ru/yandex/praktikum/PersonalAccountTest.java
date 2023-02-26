@@ -17,8 +17,8 @@ import static ru.yandex.praktikum.pages.helper.UserData.defaultUserData;
 @DisplayName("Проверка личного кабинета")
 public class PersonalAccountTest extends TestBase{
     private static User user;
-    static DeleteUser deleteUser = new DeleteUser();
-    static RegistrationUser registrationUser = new RegistrationUser();
+    DeleteUser deleteUser = new DeleteUser();
+    RegistrationUser registrationUser = new RegistrationUser();
 
     @Before
     public void setUp() {
