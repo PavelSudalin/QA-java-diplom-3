@@ -14,8 +14,8 @@ import static ru.yandex.praktikum.pages.helper.UserData.defaultUserData;
 @DisplayName("Проверка антуфикации пользователя")
 public class LoginUserTest extends TestBase{
     private static User user;
-    static DeleteUser deleteUser = new DeleteUser();
-    static RegistrationUser registrationUser = new RegistrationUser();
+    private static final DeleteUser deleteUser = new DeleteUser();
+    private static final RegistrationUser registrationUser = new RegistrationUser();
 
     @Before
     public void setUp() {

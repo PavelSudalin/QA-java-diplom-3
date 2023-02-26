@@ -16,7 +16,7 @@ import static ru.yandex.praktikum.pages.helper.UserData.*;
 @DisplayName("Проверка регистрации пользователя")
 public class RegistrationTest extends TestBase{
     private User user;
-    DeleteUser deleteUser = new DeleteUser();
+    private final DeleteUser deleteUser = new DeleteUser();
     private boolean createUser;
     @Before
     public void setUp() {
